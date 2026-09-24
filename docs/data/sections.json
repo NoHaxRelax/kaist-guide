@@ -1,0 +1,573 @@
+[
+  {
+    "n": 1,
+    "slug": "index",
+    "file": "01-should-you-go.md",
+    "title": "Should you go?",
+    "ko": "갈까 말까",
+    "rom": "galkka malkka",
+    "meaning": "go or not?",
+    "words": 1562,
+    "minutes": 7,
+    "window": "Nov",
+    "keyFigures": [
+      {
+        "label": "Return flight, my biggest single expense",
+        "amount": 6000,
+        "unit": "DKK",
+        "prefix": "about",
+        "source": "records",
+        "year": "2025",
+        "note": ""
+      },
+      {
+        "label": "Dorm for the whole semester",
+        "amount": 4000,
+        "unit": "DKK",
+        "prefix": "about",
+        "source": "memory",
+        "year": "2025",
+        "note": ""
+      },
+      {
+        "label": "Exchange students in my cohort",
+        "amount": 200,
+        "unit": "students",
+        "prefix": "about",
+        "source": "memory",
+        "year": "2025",
+        "note": "fall 2025"
+      }
+    ],
+    "tip": {
+      "text": "Want a chill semester? Then I'd probably choose somewhere else, though it depends on how all-in you want to go.",
+      "href": "index#poor-fits"
+    }
+  },
+  {
+    "n": 2,
+    "slug": "applying",
+    "file": "02-applying.md",
+    "title": "Applying",
+    "ko": "지원",
+    "rom": "jiwon",
+    "meaning": "applying",
+    "words": 2115,
+    "minutes": 10,
+    "window": "Nov to May",
+    "keyFigures": [
+      {
+        "label": "Passed before you leave",
+        "amount": 110,
+        "unit": "ECTS",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "DTU's 2025 to 2026 rules"
+      },
+      {
+        "label": "Minimum to pass per exchange semester",
+        "amount": 20,
+        "unit": "ECTS",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "or DTU may reclaim grants"
+      },
+      {
+        "label": "Per 3-credit KAIST course, bachelor",
+        "amount": 5.625,
+        "unit": "ECTS",
+        "prefix": "",
+        "source": "records",
+        "year": "2026",
+        "note": "DTU's 2026 KAIST listing"
+      },
+      {
+        "label": "Per 3-credit KAIST course, master's",
+        "amount": 7.5,
+        "unit": "ECTS",
+        "prefix": "",
+        "source": "records",
+        "year": "2026",
+        "note": "500-level courses and up"
+      },
+      {
+        "label": "Duolingo English Test",
+        "amount": 40,
+        "unit": "USD",
+        "prefix": "about",
+        "source": "records",
+        "year": "2025",
+        "note": "check if KAIST needs a test first"
+      }
+    ],
+    "tip": {
+      "text": "Have two or three backups you'd genuinely be happy with.",
+      "href": "applying#your-five-priorities"
+    }
+  },
+  {
+    "n": 3,
+    "slug": "money",
+    "file": "03-money.md",
+    "title": "Money",
+    "ko": "돈",
+    "rom": "don",
+    "meaning": "money",
+    "words": 1791,
+    "minutes": 8,
+    "window": "Sep to May",
+    "keyFigures": [
+      {
+        "label": "SU a month, after tax",
+        "amount": 6084,
+        "unit": "DKK",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "7,086 before tax"
+      },
+      {
+        "label": "My four grants, before tax",
+        "amount": 37000,
+        "unit": "DKK",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "about 33,000 after tax, from about 20 applications"
+      },
+      {
+        "label": "Otto Mønsteds Fond, up to",
+        "amount": 10000,
+        "unit": "DKK",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "open 10 January to 1 March"
+      },
+      {
+        "label": "My budget for four months",
+        "amount": 63143,
+        "unit": "DKK",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "sent to funds in January 2025"
+      },
+      {
+        "label": "Korean health insurance a month",
+        "amount": 76390,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "with the 50% student discount"
+      }
+    ],
+    "tip": {
+      "text": "Apply for every grant, the small ones included, since they're the ones you're most likely to get.",
+      "href": "money#grant-applications"
+    }
+  },
+  {
+    "n": 4,
+    "slug": "before-you-fly",
+    "file": "04-before-you-fly.md",
+    "title": "Before you fly",
+    "ko": "출국 전",
+    "rom": "chulguk jeon",
+    "meaning": "before leaving the country",
+    "words": 1807,
+    "minutes": 8,
+    "window": "Jun to Jul",
+    "keyFigures": [
+      {
+        "label": "Return flight Copenhagen to Seoul",
+        "amount": 5967,
+        "unit": "DKK",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "Turkish Airlines via Istanbul, booked in April"
+      },
+      {
+        "label": "Student visa, stays over 90 days",
+        "amount": 420,
+        "unit": "DKK",
+        "prefix": "",
+        "source": "records",
+        "year": "2026",
+        "note": "the embassy's page"
+      },
+      {
+        "label": "Wait for the visa after the appointment",
+        "amount": 16,
+        "unit": "days",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "appointment 15 July, visa 31 July"
+      },
+      {
+        "label": "Tuberculosis blood test",
+        "amount": 600,
+        "unit": "DKK",
+        "prefix": "about",
+        "source": "memory",
+        "year": "2025",
+        "note": "for KAIST's health form"
+      }
+    ],
+    "tip": {
+      "text": "Book your embassy slot as soon as KAIST's Certificate of Admission arrives.",
+      "href": "before-you-fly#student-visa"
+    }
+  },
+  {
+    "n": 5,
+    "slug": "arrival",
+    "file": "05-arrival.md",
+    "title": "Arrival and first weeks",
+    "ko": "도착",
+    "rom": "dochak",
+    "meaning": "arrival",
+    "words": 1861,
+    "minutes": 9,
+    "window": "Aug to Sep",
+    "keyFigures": [
+      {
+        "label": "Airport bus to Daejeon, standard",
+        "amount": 27700,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "fares from January 2025"
+      },
+      {
+        "label": "Orientation fee, in cash",
+        "amount": 20000,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025"
+      },
+      {
+        "label": "Bedding rental, in cash",
+        "amount": 20000,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025"
+      },
+      {
+        "label": "Residence card fee",
+        "amount": 35000,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "KAIST's page still says 30,000"
+      },
+      {
+        "label": "Register for the residence card within",
+        "amount": 90,
+        "unit": "days",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "of arriving"
+      }
+    ],
+    "tip": {
+      "text": "Do the forms on day one and give them the whole day.",
+      "href": "arrival#first-week-list"
+    }
+  },
+  {
+    "n": 6,
+    "slug": "academics",
+    "file": "06-academics.md",
+    "title": "Academics",
+    "ko": "공부",
+    "rom": "gongbu",
+    "meaning": "studying",
+    "words": 2331,
+    "minutes": 11,
+    "window": "Aug to Feb",
+    "keyFigures": [
+      {
+        "label": "Transferred from my five courses",
+        "amount": 27.5,
+        "unit": "ECTS",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "32.5 with a DTU January course"
+      },
+      {
+        "label": "Attendance share of the grade in CS473",
+        "amount": 10,
+        "unit": "%",
+        "prefix": "",
+        "source": "records",
+        "year": "2025"
+      },
+      {
+        "label": "International students who saw lectures switch to Korean",
+        "amount": 84,
+        "unit": "%",
+        "prefix": "",
+        "source": "records",
+        "year": "2024",
+        "note": "KAIST Herald survey"
+      }
+    ],
+    "tip": {
+      "text": "Put the registration lottery in your calendar the day your acceptance letter arrives.",
+      "href": "academics#registration-and-the-lottery"
+    }
+  },
+  {
+    "n": 7,
+    "slug": "campus-life",
+    "file": "07-campus-life.md",
+    "title": "Campus life",
+    "ko": "캠퍼스",
+    "rom": "kaempeoseu",
+    "meaning": "campus",
+    "words": 1872,
+    "minutes": 9,
+    "window": "Aug to Dec",
+    "keyFigures": [
+      {
+        "label": "Dorm for the whole semester",
+        "amount": 4000,
+        "unit": "DKK",
+        "prefix": "about",
+        "source": "memory",
+        "year": "2025",
+        "note": "a double room in W6"
+      },
+      {
+        "label": "International Kitchen, fall semester",
+        "amount": 15000,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "100 places, bring your own utensils"
+      },
+      {
+        "label": "Sports Complex weight room a month",
+        "amount": 30000,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2026",
+        "note": "places by monthly lottery"
+      }
+    ],
+    "tip": {
+      "text": "Get a bike, because the campus is big and attendance counts.",
+      "href": "campus-life#bikes"
+    }
+  },
+  {
+    "n": 8,
+    "slug": "food-and-nights-out",
+    "file": "08-food-and-nights-out.md",
+    "title": "Food and nights out",
+    "ko": "밥과 밤",
+    "rom": "bapgwa bam",
+    "meaning": "meals and nights",
+    "words": 1307,
+    "minutes": 6,
+    "window": "Aug to Dec",
+    "keyFigures": [
+      {
+        "label": "My food spend a day",
+        "amount": 100,
+        "unit": "DKK",
+        "prefix": "about",
+        "source": "memory",
+        "year": "2025",
+        "note": "on the high side, I eat a lot"
+      },
+      {
+        "label": "West cafeteria lunch or dinner",
+        "amount": 5500,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2026"
+      },
+      {
+        "label": "West cafeteria breakfast",
+        "amount": 3700,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2026"
+      },
+      {
+        "label": "Kaimaru breakfast, weekdays",
+        "amount": 1000,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2023",
+        "note": "running since May 2023, check it still is"
+      }
+    ],
+    "tip": {
+      "text": "Search for Korean barbecue in Korean on Naver Map or KakaoMap, so you find the places locals go to.",
+      "href": "food-and-nights-out#finding-restaurants"
+    }
+  },
+  {
+    "n": 9,
+    "slug": "people",
+    "file": "09-people.md",
+    "title": "People",
+    "ko": "사람들",
+    "rom": "saramdeul",
+    "meaning": "people",
+    "words": 820,
+    "minutes": 4,
+    "window": "Aug to Dec",
+    "keyFigures": [
+      {
+        "label": "Buddy day trip to Gongju",
+        "amount": 20000,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "lunch included, 75 places by lottery"
+      },
+      {
+        "label": "Korean KAIST students with no contact with international students",
+        "amount": 48.1,
+        "unit": "%",
+        "prefix": "",
+        "source": "records",
+        "year": "2024",
+        "note": "KAIST Herald survey"
+      },
+      {
+        "label": "Visa-free visits for Danes",
+        "amount": 90,
+        "unit": "days",
+        "prefix": "",
+        "source": "records",
+        "year": "2026",
+        "note": "no K-ETA needed until 31 December 2026"
+      }
+    ],
+    "tip": {
+      "text": "Say yes to everything socially in the first weeks.",
+      "href": "people#the-buddy-programme"
+    }
+  },
+  {
+    "n": 10,
+    "slug": "travel",
+    "file": "10-travel.md",
+    "title": "Travel",
+    "ko": "여행",
+    "rom": "yeohaeng",
+    "meaning": "travel",
+    "words": 1440,
+    "minutes": 7,
+    "window": "Sep to Dec",
+    "keyFigures": [
+      {
+        "label": "KTX Daejeon to Seoul, standard",
+        "amount": 23700,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "September 2025, before the 2026 fare cut"
+      },
+      {
+        "label": "KTX Daejeon to Busan, standard",
+        "amount": 36200,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "September 2025, before the 2026 fare cut"
+      },
+      {
+        "label": "Cheongju to Jeju, one-way, from",
+        "amount": 29,
+        "unit": "USD",
+        "prefix": "about",
+        "source": "records",
+        "year": "2026",
+        "note": "about 20 flights a day"
+      },
+      {
+        "label": "Chuseok break with one Friday skipped",
+        "amount": 10,
+        "unit": "days",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "no week-long break in 2026"
+      }
+    ],
+    "tip": {
+      "text": "Get your residence card before any trip abroad, or a single-entry visa is used up.",
+      "href": "travel#visa-rules-for-trips-abroad"
+    }
+  },
+  {
+    "n": 11,
+    "slug": "leaving",
+    "file": "11-leaving-and-top-tips.md",
+    "title": "Leaving",
+    "ko": "떠나기",
+    "rom": "tteonagi",
+    "meaning": "leaving",
+    "words": 803,
+    "minutes": 4,
+    "window": "Dec to Jan",
+    "keyFigures": [
+      {
+        "label": "My Uber from Daejeon to Incheon",
+        "amount": 213100,
+        "unit": "KRW",
+        "prefix": "",
+        "source": "records",
+        "year": "2025",
+        "note": "tolls included, the buses were sold out"
+      },
+      {
+        "label": "Buy the airport bus ticket ahead",
+        "amount": 2,
+        "unit": "days",
+        "prefix": "",
+        "source": "memory",
+        "year": "2025",
+        "note": "one to two days, in person at Daejeon Government Complex"
+      },
+      {
+        "label": "Disposal notice on things left at the dorm",
+        "amount": 7,
+        "unit": "days",
+        "prefix": "",
+        "source": "records",
+        "year": "2026",
+        "note": "after 2 days, bikes included"
+      }
+    ],
+    "tip": {
+      "text": "Book the airport bus home early and leave Daejeon in the morning.",
+      "href": "leaving#the-airport-run"
+    }
+  }
+]

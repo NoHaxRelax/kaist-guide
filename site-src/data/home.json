@@ -1,0 +1,31 @@
+{
+  "headline": "My KAIST exchange, from “should I apply?” to credits back at DTU",
+  "intro": "I spent the fall 2025 semester on exchange at KAIST in Daejeon, South Korea, in the third year of my bachelor's line in Artificial Intelligence and Data at DTU. I picked KAIST because I love Korean food and culture, it's fairly prestigious, and I wanted the challenge of a new study culture, new people and new places.",
+  "scores": [
+    { "category": "KAIST overall", "score": 10, "why": "The first days are stressful, and after that it's super fun" },
+    { "category": "Academics", "score": 8, "why": "My two favourite courses were excellent, but the exams test memorisation hard" },
+    { "category": "Social life", "score": 10, "why": "About 200 exchange students in my cohort, and I never felt lonely" },
+    { "category": "Dorm", "score": 7, "why": "Very cheap, with a gym and study space, but I shared a double room and there's no kitchen" },
+    { "category": "Food", "score": 10, "why": "Kaimaru and cheap Korean barbecue, often all-you-can-eat" },
+    { "category": "Admin and bureaucracy", "score": 2, "why": "Paper forms everywhere, and getting the residence card was \"one of the biggest messes ever\"" },
+    { "category": "Value for money", "score": 10, "why": "No tuition, a dorm that cost me about 4,000 DKK for the whole semester, and cheap food" },
+    { "category": "Safety", "score": 10, "why": "I never felt unsafe" }
+  ],
+  "tips": [
+    { "text": "Arrive two days early and rest before orientation.", "slug": "arrival" },
+    { "text": "Have Uber installed when you land, which \"makes everything 100 times easier\".", "slug": "arrival" },
+    { "text": "Do the forms on day one and give them the whole day.", "slug": "arrival" },
+    { "text": "Take the residence card shortcut to the immigration office on campus.", "slug": "arrival" },
+    { "text": "Put the registration lottery in your calendar as soon as you're accepted.", "slug": "academics" },
+    { "text": "Get a real Korean SIM with 30 to 50 GB (gigabytes) of data a month and calling.", "slug": "arrival" },
+    { "text": "Bring a backup international card such as Revolut or Lunar.", "slug": "money" },
+    { "text": "Get a bike, because the campus is big and attendance counts.", "slug": "campus-life" },
+    { "text": "Pack light and buy clothes in Korea.", "slug": "before-you-fly" },
+    { "text": "Be polite to professors and teaching assistants, who are flexible if you ask nicely.", "slug": "academics" },
+    { "text": "Don't stress about a bad midterm, since grading is on a curve.", "slug": "academics" },
+    { "text": "Pick \"out-of-distribution\" courses, ones you couldn't take at home, and take databases at DTU.", "slug": "academics" },
+    { "text": "Apply for every grant, the small ones included.", "slug": "money" },
+    { "text": "Say yes to everything socially in the first weeks.", "slug": "people" },
+    { "text": "Book the airport bus home early and leave Daejeon in the morning.", "slug": "leaving" }
+  ]
+}

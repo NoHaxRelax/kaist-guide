@@ -1,0 +1,11 @@
+# Allow-list: nothing is committed unless it is named below.
+# Interview notes, Gmail/Drive evidence, research dumps, prototypes, review
+# screenshots and PRODUCT.md stay local. Never add them.
+/*
+!/.gitignore
+!/README.md
+!/docs/
+!/draft/
+!/site-src/
+site-src/node_modules/
+site-src/_scratch/
