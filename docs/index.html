@@ -1,293 +1,341 @@
-﻿<!doctype html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KAIST, the short version: an exchange guide for DTU students</title>
-<meta name="description" content="A quick, honest overview of an exchange semester at KAIST in Daejeon, South Korea, for DTU students: timeline, money, visa, arrival, courses and tips, from a fall 2025 exchange.">
-<meta property="og:title" content="KAIST, the short version">
-<meta property="og:description" content="A quick, honest overview of an exchange semester at KAIST for DTU students, from fall 2025.">
+<title>My KAIST experience</title>
+<meta name="description" content="How my fall 2025 exchange at KAIST in Daejeon, South Korea went, from a DTU student: applying, money, visa, courses, dorm life, friends and travel.">
+<meta property="og:title" content="My KAIST experience">
+<meta property="og:description" content="How my fall 2025 exchange at KAIST went, from a DTU student.">
 <meta property="og:type" content="article">
-<meta name="color-scheme" content="light dark">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f47c7'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' text-anchor='middle' fill='white'%3EK%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23268bd2'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' text-anchor='middle' fill='%23fdf6e3'%3EK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<script>
+  // Solarized light by default; remember the reader's choice if they switch.
+  try { var t = localStorage.getItem('kaist-theme'); if (t === 'dark' || t === 'light') document.documentElement.dataset.theme = t; } catch (e) {}
+</script>
 <style>
-  :root {
-    --bg: #f6f7f9;
-    --paper: #ffffff;
-    --ink: #14171c;
-    --muted: #5b626e;
-    --line: #e1e4ea;
-    --accent: #1f47c7;
-    --accent-soft: #e7ecfb;
-    --serif: "Instrument Serif", Georgia, serif;
-    --sans: "Geist", "Segoe UI", system-ui, sans-serif;
+  /* Solarized: https://ethanschoonover.com/solarized/ */
+  :root, [data-theme="light"] {
+    --bg: #fdf6e3;      /* base3 */
+    --bg-alt: #eee8d5;  /* base2 */
+    --text: #586e75;    /* base01 */
+    --strong: #073642;  /* base02 */
+    --muted: #657b83;   /* base00 */
+    --rule: #e4dcc3;
+    --accent: #268bd2;  /* blue */
+    --warn: #cb4b16;    /* orange */
+    color-scheme: light;
   }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #0e1014;
-      --paper: #14171d;
-      --ink: #e7e9ee;
-      --muted: #9aa2ae;
-      --line: #262b33;
-      --accent: #8fa8ff;
-      --accent-soft: #1b2342;
-    }
+  [data-theme="dark"] {
+    --bg: #002b36;      /* base03 */
+    --bg-alt: #073642;  /* base02 */
+    --text: #93a1a1;    /* base1 */
+    --strong: #eee8d5;  /* base2 */
+    --muted: #839496;   /* base0 */
+    --rule: #0d4452;
+    --accent: #58a6e8;
+    --warn: #e0703a;
+    color-scheme: dark;
   }
   * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  body {
-    margin: 0; background: var(--bg); color: var(--ink);
-    font: 400 17.5px/1.65 var(--sans); font-feature-settings: "tnum" 0;
-    text-rendering: optimizeLegibility;
-  }
-  ::selection { background: var(--accent-soft); color: var(--ink); }
-  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-  a:hover { text-decoration-thickness: 2px; }
-  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 400 17.5px/1.7 "Geist", "Segoe UI", system-ui, sans-serif; }
+  ::selection { background: var(--bg-alt); color: var(--strong); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  strong { color: var(--strong); font-weight: 600; }
 
-  .page { max-width: 44rem; margin: 0 auto; padding: 4.5rem 1.5rem 3rem; }
+  .layout { max-width: 78rem; margin: 0 auto; padding: 0 2rem; display: grid; grid-template-columns: 11.5rem minmax(0, 1fr); gap: 3.5rem; }
+  .page { max-width: 51rem; padding: 3.5rem 0 3rem; }
 
-  header h1 {
-    font: 400 clamp(2.9rem, 8vw, 4.6rem)/1 var(--serif);
-    letter-spacing: -0.02em; margin: 0 0 1.1rem;
-  }
-  header h1 em { font-style: italic; color: var(--accent); }
-  .ko { font: 500 0.95rem/1 var(--sans); color: var(--muted); letter-spacing: 0.02em; margin: 0 0 1.4rem; }
-  .lede { font-size: 1.12rem; color: var(--ink); margin: 0 0 0.6rem; max-width: 38rem; }
-  .by { color: var(--muted); font-size: 0.95rem; margin: 0; }
+  .toc { position: sticky; top: 0; align-self: start; padding-top: 7.2rem; font-size: 0.92rem; }
+  .toc p { margin: 0 0 0.6rem; color: var(--muted); font-weight: 500; }
+  .toc ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--rule); }
+  .toc a { display: block; padding: 0.22rem 0 0.22rem 0.9rem; margin-left: -1px; border-left: 1px solid transparent; color: var(--muted); text-decoration: none; }
+  .toc a:hover { color: var(--strong); border-left-color: var(--muted); }
+  .toc a.on { color: var(--accent); border-left-color: var(--accent); }
 
-  .glance {
-    display: grid; grid-template-columns: repeat(4, 1fr);
-    margin: 2.6rem 0 0; padding: 0; list-style: none;
-    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-  }
-  .glance li { padding: 1rem 1rem 1.1rem 0; }
-  .glance li + li { padding-left: 1rem; border-left: 1px solid var(--line); }
-  .glance b { display: block; font: 400 1.65rem/1.1 var(--serif); margin-bottom: 0.25rem; font-variant-numeric: lining-nums; }
-  .glance span { color: var(--muted); font-size: 0.86rem; line-height: 1.4; display: block; }
+  .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.4rem; font-size: 0.9rem; color: var(--muted); }
+  .theme { font: inherit; color: var(--muted); background: none; border: 1px solid var(--rule); border-radius: 999px; padding: 0.25rem 0.8rem; cursor: pointer; }
+  .theme:hover { color: var(--strong); border-color: var(--muted); }
 
-  nav.toc { display: flex; flex-wrap: wrap; gap: 0.3rem 1.15rem; margin: 1.5rem 0 0; font-size: 0.93rem; }
-  nav.toc a { color: var(--muted); text-decoration: none; white-space: nowrap; }
-  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+  h1 { font: 400 clamp(2.6rem, 7vw, 3.8rem)/1.05 "Instrument Serif", Georgia, serif; color: var(--strong); margin: 0 0 0.4rem; letter-spacing: -0.01em; }
+  .sub { margin: 0 0 2rem; color: var(--muted); }
+  .about p { margin: 0 0 1rem; }
 
-  section { margin-top: 3.6rem; scroll-margin-top: 1.5rem; }
-  h2 {
-    font: 400 2.05rem/1.1 var(--serif); letter-spacing: -0.01em;
-    margin: 0 0 1rem; padding-top: 1.2rem; border-top: 1px solid var(--line);
-  }
-  p { margin: 0 0 1rem; }
-  ul, ol { margin: 0 0 1rem; padding-left: 1.2rem; }
-  li { margin: 0.35rem 0; }
+  .controls { display: flex; gap: 1rem; margin: 2.2rem 0 0.4rem; font-size: 0.9rem; }
+  .controls button { font: inherit; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+
+  details { border-top: 1px solid var(--rule); }
+  details:last-of-type { border-bottom: 1px solid var(--rule); }
+  summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.95rem 0.2rem; }
+  summary::-webkit-details-marker { display: none; }
+  summary h2 { font: 400 1.6rem/1.2 "Instrument Serif", Georgia, serif; color: var(--strong); margin: 0; }
+  summary::after { content: ""; flex: none; width: 0.55rem; height: 0.55rem; border-right: 2px solid var(--muted); border-bottom: 2px solid var(--muted); transform: rotate(45deg); margin-right: 0.35rem; transition: transform 0.15s ease; }
+  details[open] > summary::after { transform: rotate(-135deg); }
+  summary:hover h2 { color: var(--accent); }
+  .body { padding: 0 0.2rem 1.4rem; }
+  .body p { margin: 0 0 0.9rem; }
+  .body ul, .body ol { margin: 0 0 0.9rem; padding-left: 1.25rem; }
+  .body li { margin: 0.35rem 0; }
   li::marker { color: var(--muted); }
-  strong { font-weight: 600; }
-  .muted { color: var(--muted); }
-  .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
 
-  .tips { counter-reset: tip; list-style: none; padding: 0; }
-  .tips li {
-    counter-increment: tip; position: relative; padding: 0.7rem 0 0.7rem 2.6rem;
-    margin: 0; border-bottom: 1px solid var(--line);
+  .scores { display: grid; grid-template-columns: 1fr 1fr; gap: 0 2rem; list-style: none; padding: 0 !important; margin: 0 0 1rem; }
+  .scores li { display: flex; justify-content: space-between; border-bottom: 1px dotted var(--rule); margin: 0; padding: 0.3rem 0; }
+  .scores b { color: var(--strong); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .scores .low b { color: var(--warn); }
+  .note { font-size: 0.9rem; color: var(--muted); margin-top: -0.3rem !important; }
+
+  dl.dates { display: grid; grid-template-columns: 7.5rem 1fr; margin: 0 0 0.9rem; }
+  dl.dates dt { color: var(--muted); font-size: 0.93rem; padding: 0.35rem 0; font-variant-numeric: tabular-nums; }
+  dl.dates dd { margin: 0; padding: 0.35rem 0; }
+
+  .tiers { list-style: none; padding: 0 !important; }
+  .tiers li { display: grid; grid-template-columns: 1.6rem 1fr; gap: 0.6rem; margin: 0.5rem 0; }
+  .tiers b { color: var(--strong); font-weight: 600; }
+  .tiers .t { font-weight: 600; color: var(--muted); }
+  .tiers .t.s { color: var(--accent); }
+
+  footer { margin-top: 3rem; font-size: 0.88rem; color: var(--muted); }
+  footer p { margin: 0 0 0.4rem; }
+
+  @media (max-width: 960px) {
+    .layout { display: block; padding: 0 1.4rem; }
+    .toc { display: none; }
+    .page { margin: 0 auto; }
   }
-  .tips li:last-child { border-bottom: 0; }
-  .tips li::before {
-    content: counter(tip); position: absolute; left: 0; top: 0.55rem;
-    font: 400 1.5rem/1 var(--serif); color: var(--accent); width: 1.8rem; text-align: right;
-  }
-
-  .scores { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.2rem 1.5rem; margin: 0 0 1.2rem; padding: 0; list-style: none; }
-  .scores li { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px dotted var(--line); margin: 0; padding: 0.3rem 0; font-size: 0.95rem; }
-  .scores b { font: 400 1.25rem/1 var(--serif); font-variant-numeric: tabular-nums; }
-  .scores .low b { color: #b4461d; }
-  @media (prefers-color-scheme: dark) { .scores .low b { color: #ff9a6e; } }
-
-  dl.timeline { display: grid; grid-template-columns: 7.2rem 1fr; margin: 0; }
-  dl.timeline dt { color: var(--muted); font-size: 0.93rem; padding: 0.45rem 0; border-top: 1px solid var(--line); font-variant-numeric: tabular-nums; }
-  dl.timeline dd { margin: 0; padding: 0.45rem 0; border-top: 1px solid var(--line); }
-  dl.timeline dt:first-of-type, dl.timeline dd:first-of-type { border-top: 0; }
-
-  .tiers { list-style: none; padding: 0; margin: 0 0 1.2rem; }
-  .tiers li { display: grid; grid-template-columns: 2.1rem 1fr; gap: 0.9rem; align-items: baseline; margin: 0; padding: 0.55rem 0; border-bottom: 1px solid var(--line); }
-  .tier { font: 400 1.55rem/1 var(--serif); text-align: center; color: var(--muted); }
-  .tier.s { color: var(--accent); }
-  .tiers small { display: block; color: var(--muted); font-size: 0.9rem; line-height: 1.45; margin-top: 0.1rem; }
-
-  footer { margin-top: 4.5rem; padding-top: 1.2rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.88rem; line-height: 1.55; }
-  footer p { margin: 0 0 0.5rem; }
-
-  @media (max-width: 640px) {
+  @media (max-width: 600px) {
     body { font-size: 17px; }
-    .page { padding: 3rem 1.15rem 2.5rem; }
-    .glance { grid-template-columns: 1fr 1fr; }
-    .glance li:nth-child(3) { padding-left: 0; border-left: 0; }
-    .glance li:nth-child(n+3) { border-top: 1px solid var(--line); }
-    .scores { grid-template-columns: 1fr 1fr; }
-    dl.timeline { grid-template-columns: 5.6rem 1fr; }
+    .layout { padding: 0 1rem; }
+    .page { padding: 2rem 0 2.5rem; }
+    .scores { grid-template-columns: 1fr; }
+    dl.dates { grid-template-columns: 6.2rem 1fr; }
   }
+  @media (prefers-reduced-motion: reduce) { summary::after { transition: none; } }
 </style>
 </head>
 <body>
+<div class="layout">
+<nav class="toc" aria-label="Contents">
+  <p>Contents</p>
+  <ol>
+    <li><a href="#about">About me</a></li>
+    <li><a href="#tips">My top tips</a></li>
+    <li><a href="#rating">How I'd rate it</a></li>
+    <li><a href="#dates">My dates</a></li>
+    <li><a href="#applying">Applying</a></li>
+    <li><a href="#money">Money</a></li>
+    <li><a href="#before">Before I left</a></li>
+    <li><a href="#arriving">Arriving</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#campus">Living on campus</a></li>
+    <li><a href="#friends">Friends and travel</a></li>
+    <li><a href="#home">Going home</a></li>
+  </ol>
+</nav>
 <main class="page">
 
-<header>
-  <p class="ko" lang="ko">카이스트 교환학생 <span lang="en">· KAIST exchange, fall 2025</span></p>
-  <h1>KAIST, the <em>short</em> version</h1>
-  <p class="lede">A quick guide to an exchange semester at KAIST (Korea Advanced Institute of Science and Technology) in Daejeon, South Korea, for students at DTU (Technical University of Denmark). Everything here comes from my own fall 2025 semester.</p>
-  <p class="by">By Elias, BSc in Artificial Intelligence and Data at DTU.</p>
+<div class="top">
+  <span>Fall 2025 · Daejeon, South Korea</span>
+  <button class="theme" type="button" id="theme">Dark</button>
+</div>
 
-  <ul class="glance">
-    <li><b>1 Sep to 19 Dec</b><span>the fall 2025 semester</span></li>
-    <li><b>~63,000 kr</b><span>for four months, rent at home included</span></li>
-    <li><b>27.5 ECTS</b><span>from five KAIST courses</span></li>
-    <li><b>10 / 10</b><span>my overall score</span></li>
-  </ul>
+<h1>My KAIST experience</h1>
+<p class="sub">by Elias</p>
 
-  <nav class="toc" aria-label="Contents">
-    <a href="#tips">Top tips</a><a href="#go">Should you go?</a><a href="#timeline">Timeline</a><a href="#applying">Applying</a><a href="#money">Money</a><a href="#before">Before you fly</a><a href="#arrival">Arrival</a><a href="#courses">Courses</a><a href="#campus">Campus life</a><a href="#people">People and travel</a><a href="#leaving">Leaving</a>
-  </nav>
-</header>
+<div class="about" id="about">
+  <p>Hi, I'm Elias. I study Artificial Intelligence and Data at DTU (Technical University of Denmark), and in fall 2025, my fifth semester, I went on exchange to KAIST (Korea Advanced Institute of Science and Technology) in Daejeon, South Korea.</p>
+  <p>I'd been to Korea once before, as a tourist with two friends after high school, and fell in love with the food and the culture. This is how my semester went, what it cost and what I'd do differently, for anyone at DTU thinking about going.</p>
+</div>
 
-<section id="tips">
-  <h2>If you only read this</h2>
-  <ol class="tips">
-    <li><strong>Land two days before orientation.</strong> I landed on the day itself, jet-lagged, and missed the welcome events.</li>
-    <li><strong>Put the course registration lottery in your calendar</strong> the day you're accepted (12 August in 2025). I forgot it and only got the leftover courses.</li>
-    <li><strong>Do all the forms on your first day</strong>, and bring Korean cash for them.</li>
-    <li><strong>Apply for your residence card directly</strong> at the immigration office on campus. Mine took 2 to 3 weeks, against about a month through the volunteer queue.</li>
-    <li><strong>Don't leave Korea before your residence card arrives.</strong> The student visa is single entry.</li>
-    <li><strong>Get a proper Korean SIM</strong> with 30 to 50 GB and calls. Living on eSIMs was a pain.</li>
-    <li><strong>Bring a backup card</strong> like Revolut or Lunar. My Danish card was refused at most cash machines.</li>
-    <li><strong>Get a bike.</strong> Class was 10 minutes' walk from my dorm, or 2 by bike.</li>
-    <li><strong>Apply for every grant you find.</strong> I sent about 20 and got 4, worth 37,000 kr.</li>
-    <li><strong>Book the airport bus home in person</strong>, a day or two ahead. I didn't, and paid 213,100 won (about 1,000 kr) for a taxi.</li>
-  </ol>
-</section>
+<div class="controls">
+  <button type="button" id="open-all">Open all</button>
+  <button type="button" id="close-all">Close all</button>
+</div>
 
-<section id="go">
-  <h2>Should you go?</h2>
-  <p>Yes, if you want a real challenge. My scores, out of 10:</p>
-  <ul class="scores">
-    <li>Overall <b>10</b></li><li>Academics <b>8</b></li><li>Social life <b>10</b></li><li>Dorm <b>7</b></li>
-    <li>Food <b>10</b></li><li class="low">Admin <b>2</b></li><li>Value <b>10</b></li><li>Safety <b>10</b></li>
-  </ul>
-  <p><strong>Go if</strong> you like team projects, want courses you can't take at DTU, and can live with paperwork. <strong>Pick somewhere else</strong> if you want a chill semester or hate exams that test memory.</p>
-</section>
+<details id="tips">
+  <summary><h2>My top tips</h2></summary>
+  <div class="body">
+    <ol>
+      <li>Land a couple of days before orientation. I landed on the morning of orientation day, jet-lagged, and missed the welcome events.</li>
+      <li>Don't forget the course registration lottery (12 August in 2025). I did, and only got the courses that weren't full.</li>
+      <li>Get all the forms done on day one, and bring Korean cash.</li>
+      <li>Apply for your residence card directly at the immigration office on campus. Mine took 2 to 3 weeks; friends who used the volunteer queue waited about a month.</li>
+      <li>Don't leave Korea before the residence card arrives, because the student visa is single entry.</li>
+      <li>Get a real Korean SIM with 30 to 50 GB and calls. I tried to live on eSIMs and regretted it.</li>
+      <li>Bring a second card like Revolut or Lunar. My Danish bank card was refused at most cash machines.</li>
+      <li>Get a bike. It turns a 10 minute walk into 2 minutes.</li>
+      <li>Apply for every grant you can. I applied to about 20 and got 4.</li>
+      <li>Book the airport bus home a day or two ahead. I didn't, and ended up paying 213,100 won (about 1,000 kr) for a taxi.</li>
+    </ol>
+  </div>
+</details>
 
-<section id="timeline">
-  <h2>Timeline</h2>
-  <p class="muted">For a fall exchange. Dates move a little every year, so check DTU's and KAIST's pages for yours.</p>
-  <dl class="timeline">
-    <dt>November</dt><dd>Book a DTU study-abroad advising session.</dd>
-    <dt>1 December</dt><dd>Apply on Beyond Borders, DTU's exchange portal.</dd>
-    <dt>Mid-December</dt><dd>DTU's selection letter.</dd>
-    <dt>Jan to Mar</dt><dd>Grant applications. Otto Mønsteds Fond is open 10 January to 1 March.</dd>
-    <dt>By 15 April</dt><dd>Apply on KAIST's own portal (DTU nominates you by 1 April).</dd>
-    <dt>Spring</dt><dd>Get your courses pre-approved on merit.dtu.dk.</dd>
-    <dt>June</dt><dd>KAIST's acceptance, then the Certificate of Admission you need for the visa.</dd>
-    <dt>July</dt><dd>Visa at the Korean embassy. Health form due late July.</dd>
-    <dt>Mid-August</dt><dd>Course registration and the lottery.</dd>
-    <dt>Late August</dt><dd>Move in (from 21 August in 2025), then orientation.</dd>
-    <dt>Sep to Dec</dt><dd>Classes. Midterms in late October, finals in mid-December.</dd>
-    <dt>January</dt><dd>Transcript, then the credit transfer at DTU.</dd>
-  </dl>
-</section>
+<details id="rating">
+  <summary><h2>How I'd rate it</h2></summary>
+  <div class="body">
+    <ul class="scores">
+      <li>Overall <b>10</b></li><li>Academics <b>8</b></li>
+      <li>Social life <b>10</b></li><li>Dorm <b>7</b></li>
+      <li>Food <b>10</b></li><li class="low">Admin and paperwork <b>2</b></li>
+      <li>Value for money <b>10</b></li><li>Safety* <b>10</b></li>
+    </ul>
+    <p class="note">* This can vary from person to person, but I'd generally say it's as safe as Denmark.</p>
+    <p>I'd go again in a heartbeat. The only low score is admin, because Korea loves paper forms. If you want a chill semester, I'd probably pick somewhere else, but it depends on how all-in you want to go.</p>
+  </div>
+</details>
 
-<section id="applying">
-  <h2>Applying</h2>
-  <ul>
-    <li>DTU picks by GPA (grade point average) alone. The motivational letter only breaks exact ties. As I remember it, my year's cut-off for KAIST was about 9 to 9.5; DTU's 2026 page says 10.0. Rank two or three backups you'd be happy with.</li>
-    <li>Check whether you need an English test at all. I took the Duolingo test to be safe.</li>
-    <li>For the pre-approval, pick plausible courses from KAIST's catalogue. An AI tool can scan it for you, but check its picks. You can re-file as often as you need.</li>
-    <li>A KAIST course is 3 credits, about 5.6 ECTS (European Credit Transfer System points) for a bachelor student. My five courses came to 27.5 ECTS.</li>
-    <li>Bachelor students can't take graduate courses, and half your courses must come from your host department.</li>
-  </ul>
-</section>
+<details id="dates">
+  <summary><h2>My dates</h2></summary>
+  <div class="body">
+    <dl class="dates">
+      <dt>Nov 2024</dt><dd>Advising session at DTU, then applied on Beyond Borders with Caltech first and KAIST second.</dd>
+      <dt>16 Dec 2024</dt><dd>Selected for KAIST.</dd>
+      <dt>Jan 2025</dt><dd>Sent most of my grant applications.</dd>
+      <dt>22 Mar 2025</dt><dd>Applied on KAIST's own portal.</dd>
+      <dt>May 2025</dt><dd>Courses pre-approved on merit.dtu.dk.</dd>
+      <dt>5 Jun 2025</dt><dd>Accepted by KAIST.</dd>
+      <dt>15 Jul 2025</dt><dd>Visa appointment in Hellerup. The visa came on 31 July.</dd>
+      <dt>12 Aug 2025</dt><dd>The course registration lottery, which I forgot.</dd>
+      <dt>29 Aug 2025</dt><dd>Landed in Korea, with orientation the same afternoon.</dd>
+      <dt>Sep to Dec</dt><dd>The semester, 1 September to 19 December.</dd>
+      <dt>23 Dec 2025</dt><dd>Home in Copenhagen.</dd>
+      <dt>19 Jan 2026</dt><dd>My transcript arrived.</dd>
+    </dl>
+    <p>Dates move a little every year, so check DTU's and KAIST's pages for yours.</p>
+  </div>
+</details>
 
-<section id="money">
-  <h2>Money</h2>
-  <ul>
-    <li>No tuition. You keep your SU (the Danish state study grant), which was 6,084 kr a month after tax for me in 2025.</li>
-    <li>My four grants: Erik Sommerfeldt (10,000 kr, taxed), Fabrikant Vilhelm Pedersen (7,000 kr), Otto Mønsted (10,000 kr) and Vera og Carl Johan Michaelsen (10,000 kr). Write your own drafts. An AI tool can polish them, but generic letters get turned down.</li>
-    <li>Rough costs: return flights about 6,000 kr, the dorm about 4,000 kr for the whole semester, food about 100 kr a day (I eat a lot), and Korean health insurance 76,390 won a month, which I paid in cash at convenience stores.</li>
-    <li>I convert at about 215 won to 1 krone (2025), so 10,000 won is about 47 kr.</li>
-  </ul>
-</section>
+<details id="applying">
+  <summary><h2>Applying</h2></summary>
+  <div class="body">
+    <p>I applied through Beyond Borders, DTU's exchange portal, with Caltech first and KAIST second. DTU picks only by GPA (grade point average), and Caltech's spot went to someone with a higher one, so I got KAIST. As I remember it, the lowest GPA that got into KAIST my year was about 9 to 9.5, but it changes every year, so rank two or three places you'd be happy with.</p>
+    <p>After DTU picked me, I applied on KAIST's own portal in March. For the course pre-approval I had an AI tool scan KAIST's course catalogue and then checked its picks myself, and I re-filed my pre-approval two or three times as courses changed. I took the Duolingo English test to be safe.</p>
+    <p>Five KAIST courses gave me 27.5 ECTS (European Credit Transfer System points), and a three-week course at DTU in January topped me up.</p>
+  </div>
+</details>
 
-<section id="before">
-  <h2>Before you fly</h2>
-  <ul>
-    <li><strong>Visa.</strong> Book an appointment at the Korean embassy in Hellerup (on g4k.go.kr) as soon as your Certificate of Admission arrives. It cost 420 kr on the embassy's 2026 page, and mine came 16 days after the appointment.</li>
-    <li><strong>Health form.</strong> Proof of two MMR (measles, mumps, rubella) vaccinations plus a tuberculosis blood test, about 600 kr. Due late July.</li>
-    <li><strong>Insurance.</strong> DTU requires it; I had Tryg through IDA. Korean health insurance is mandatory on top.</li>
-    <li><strong>Photos.</strong> The photo booth at Nørreport, about 50 kr.</li>
-    <li><strong>Flights.</strong> I flew Turkish Airlines via Istanbul. The "flexible dates" add-on turned out to be useless when I had to move both legs.</li>
-    <li><strong>Packing.</strong> Pack light. You'll buy clothes there, and the dorm has laundry.</li>
-  </ul>
-</section>
+<details id="money">
+  <summary><h2>Money</h2></summary>
+  <div class="body">
+    <p>There's no tuition, and I kept my SU (the Danish state study grant), about 6,084 kr a month after tax.</p>
+    <p>I applied to about 20 grants and got 4: Erik Sommerfeldt (10,000 kr, taxed), Fabrikant Vilhelm Pedersen (7,000 kr), Otto Mønsted (10,000 kr) and Vera og Carl Johan Michaelsen (10,000 kr). I used AI to help with the letters, but I wrote the drafts myself.</p>
+    <p>My budget for the four months was about 63,000 kr including rent at home, and it was pretty accurate. I spent a bit more on food and a bit less on travel.</p>
+    <ul>
+      <li>Flights: about 6,000 kr return.</li>
+      <li>Dorm: about 4,000 kr for the whole semester.</li>
+      <li>Food: about 100 kr a day, because I eat a lot.</li>
+      <li>Korean health insurance: 76,390 won a month, which I paid in cash at a convenience store.</li>
+    </ul>
+    <p>I work with about 215 won to 1 krone, so 10,000 won is about 47 kr.</p>
+  </div>
+</details>
 
-<section id="arrival">
-  <h2>Arrival</h2>
-  <ul>
-    <li>Incheon airport to KAIST takes about three hours: the airport bus to Daejeon (27,700 won in 2025), then a taxi. Install Uber or Kakao T before you land.</li>
-    <li>The first days are paperwork: the registration packet, the orientation fee and bedding (20,000 won each, in cash), the dorm fee in won, and the residence card.</li>
-    <li>The residence card was "one of the biggest messes ever". Skip the volunteer hall: in the International Center (building W2-1), go right past the café and up the stairs to the Global Talent Visa Center.</li>
-  </ul>
-</section>
+<details id="before">
+  <summary><h2>Before I left</h2></summary>
+  <div class="body">
+    <ul>
+      <li>The visa meant a trip to the Korean embassy in Hellerup. Book as soon as KAIST sends your Certificate of Admission. Mine came 16 days after the appointment.</li>
+      <li>KAIST's health form needed proof of my MMR (measles, mumps, rubella) vaccines and a tuberculosis blood test, about 600 kr.</li>
+      <li>Passport photos came from the booth at Nørreport for about 50 kr.</li>
+      <li>I flew Turkish Airlines via Istanbul for about 6,000 kr. When my team won DM i AI (the Danish AI championship) that summer, I moved my flight three days later to go to the award event, and the "flexible dates" add-on I'd paid for didn't cover it.</li>
+      <li>I packed way too many clothes and ended up buying a new wardrobe in Korea.</li>
+    </ul>
+  </div>
+</details>
 
-<section id="courses">
-  <h2>Courses</h2>
-  <p>My tier list:</p>
-  <ul class="tiers">
-    <li><span class="tier s">S</span><span>CS454 AI-Based Software Engineering <small>Evolving code with evolutionary algorithms. A whole new tool in your toolbox.</small></span></li>
-    <li><span class="tier s">S</span><span>CS473 Introduction to Social Computing <small>You build your own social app. Code mixed with sociology and internet culture.</small></span></li>
-    <li><span class="tier">B</span><span>CS492(C) Diffusion and Flow Models <small>The maths and code behind image generators.</small></span></li>
-    <li><span class="tier">C</span><span>Methods in Brain and Cognitive Sciences <small>Niche and memory-heavy, but more interesting than I expected.</small></span></li>
-    <li><span class="tier">F</span><span>CS360 Introduction to Database <small>Online with your webcam on, and SQL written on paper. Take databases at DTU instead.</small></span></li>
-  </ul>
-  <ul>
-    <li>Lectures are 75 minutes, with more self-study than at DTU and no exercise sessions. Attendance counts toward your grade.</li>
-    <li>Exams test memory, but grading is on a curve, so it's hard to fail and hard to stand out. Grades come back to DTU as just "passed".</li>
-    <li>Be polite to professors and TAs (teaching assistants). They're flexible when you ask nicely.</li>
-  </ul>
-</section>
+<details id="arriving">
+  <summary><h2>Arriving</h2></summary>
+  <div class="body">
+    <p>I landed at Incheon at 8:40 on orientation day, took the airport bus to Daejeon (about three hours), got an Uber to campus, dropped my bags and went straight to orientation.</p>
+    <p>The first days were paperwork: lots of forms, the same details written again and again, all by hand. The residence card was the worst part. Instead of the volunteer hall, I went right past the café in the same building and up the stairs to the immigration office and applied directly, and my card was ready in 2 to 3 weeks.</p>
+    <p>For my ID photo, a photographer near the West Gate edited me until I looked like a K-pop star. Humbling, but fun.</p>
+  </div>
+</details>
 
-<section id="campus">
-  <h2>Campus life</h2>
-  <ul>
-    <li>Most exchange students live in W6 (Mir and Narae Hall): double rooms, split by gender, no kitchen.</li>
-    <li>Eat at Kaimaru (get the rice bowl with meat) and the convenience stores. Korean barbecue and a traditional Korean spa are peak experiences, and there's a cheap sauna on campus next to the pool.</li>
-    <li>The campus is big, green and beautiful. Get a bike.</li>
-  </ul>
-</section>
+<details id="courses">
+  <summary><h2>Courses</h2></summary>
+  <div class="body">
+    <p>I took five courses and passed all five. My tier list:</p>
+    <ul class="tiers">
+      <li><span class="t s">S</span><span><b><a href="https://coinse.github.io/teaching/2025/cs454/">AI-Based Software Engineering (CS454)</a>.</b> Evolving code with evolutionary algorithms. I came out with a whole new tool in my toolbox.</span></li>
+      <li><span class="t s">A</span><span><b><a href="https://social.cstlab.org/">Introduction to Social Computing (CS473)</a>.</b> We built our own social app. Code mixed with sociology and internet culture.</span></li>
+      <li><span class="t">B</span><span><b><a href="https://diffusion.kaist.ac.kr/">Diffusion and Flow Models (CS492C)</a>.</b> The maths and code behind image generators, with a lot of heavy maths.</span></li>
+      <li><span class="t">C</span><span><b><a href="https://bcs.kaist.ac.kr/sub050101">Methods in Brain and Cognitive Sciences (BCS.30041)</a>.</b> Niche and memory-heavy, but more interesting than I expected. The professor tried his best in English but would sometimes switch to Korean.</span></li>
+      <li><span class="t">F</span><span><b><a href="https://www.kaistdmlab.org/lectures">Introduction to Database (CS360)</a>.</b> Online with the webcam on, and SQL written on paper. Take databases at DTU instead.</span></li>
+    </ul>
+    <p>I only got courses that weren't full, because I forgot the lottery. Lectures are 75 minutes and you're expected to study a lot on your own. The exams test memory, but grading is on a curve and everything comes back to DTU as "passed".</p>
+    <p>Once I was too direct with a TA (teaching assistant), and the professor told me to be more respectful. After that I had ChatGPT help me phrase my emails politely, and the professors turned out to be really flexible when asked nicely.</p>
+  </div>
+</details>
 
-<section id="people">
-  <h2>People and travel</h2>
-  <ul>
-    <li>We were about 200 exchange students. The buddy programme is hit or miss, so say yes, then find your own people. Everyone is as nervous as you in the first days.</li>
-    <li>Koreans are friendly when you approach them but rarely start the conversation.</li>
-    <li>Go out in Gung-dong, near the West Gate, and save the big nights for Seoul. Halloween in Hongdae was incredible.</li>
-    <li>Travel early, before the workload hits. A Jeju trip with about 20 exchange students was one of my best memories.</li>
-  </ul>
-</section>
+<details id="campus">
+  <summary><h2>Living on campus</h2></summary>
+  <div class="body">
+    <p>I lived in W6 (Mir Hall) in a double room with a Korean-American roommate. He took eight or nine courses to finish early and got really stressed, which is why I'd say don't overbook yourself.</p>
+    <p>There are no kitchens, so I ate out almost every day: rice bowls with meat at Kaimaru, and chicken breast with rice and tuna from the basement convenience store. Korean barbecue and a traditional Korean spa were the best things I did in Daejeon.</p>
+    <p>I got my bike by shouting after a guy who was cycling while pulling a second bike. I used the dorm gym and the big gym, played ultimate frisbee on the grass field, and went to the cheap campus sauna next to the pool.</p>
+  </div>
+</details>
 
-<section id="leaving">
-  <h2>Leaving</h2>
-  <ul>
-    <li>File the Campus Clearance Form, return the bedding and do the move-out checklist, or KAIST holds back your transcript.</li>
-    <li>The dorm deposit only goes back to a Korean bank account. I didn't have one and used a friend's.</li>
-    <li>Book the airport bus in person at the Daejeon Government Complex stop a day or two ahead, and leave in the morning. Buses sell out around Christmas.</li>
-    <li>My transcript arrived by email in mid-January, and DTU transferred the credits after that.</li>
-  </ul>
-</section>
+<details id="friends">
+  <summary><h2>Friends and travel</h2></summary>
+  <div class="body">
+    <p>We were about 200 exchange students, and around eight of us were Danes. My buddy group was shy, so I found my own people: some Romanians I met in a queue on the first days, and a group of Kazakh friends who took us hiking and to every party in Daejeon. Koreans were friendly but rarely started a conversation.</p>
+    <p>In September about 20 of us went to Jeju. We hiked Hallasan barefoot in the rain until the park closed the mountain, and went bodyboarding on the south coast. For Halloween we all went to Seoul dressed as anime characters, and my fiancée and I went as Link and Zelda. In October I flew to Rome with my family for a week, and getting back into Korea was easy because I already had my residence card.</p>
+  </div>
+</details>
+
+<details id="home">
+  <summary><h2>Going home</h2></summary>
+  <div class="body">
+    <p>I hadn't booked a bus to the airport, everything was sold out before Christmas, and I ended up taking a 213,100 won Uber all the way to Incheon. Book the bus at the Daejeon Government Complex stop a day or two ahead.</p>
+    <p>Before leaving I filed the Campus Clearance Form and did the dorm checkout. The deposit only goes back to a Korean bank account, and I didn't have one, so a friend received it and sent it on to me. My transcript came by email in mid-January.</p>
+  </div>
+</details>
 
 <footer>
-  <p>Written by Elias about his fall 2025 exchange. Not an official DTU or KAIST page. Dates and prices change every year, so check the official pages for yours.</p>
+  <p>Written in 2026 about my fall 2025 exchange. Not an official DTU or KAIST page, and prices and dates change every year.</p>
   <p><a href="https://github.com/NoHaxRelax/kaist-guide">Source on GitHub</a></p>
 </footer>
 
 </main>
+</div>
+<script>
+  (function () {
+    var all = document.querySelectorAll('details');
+    document.getElementById('open-all').onclick = function () { all.forEach(function (d) { d.open = true; }); };
+    document.getElementById('close-all').onclick = function () { all.forEach(function (d) { d.open = false; }); };
+    function openHash() {
+      var d = location.hash && document.querySelector('details' + CSS.escape(location.hash));
+      if (d) { d.open = true; d.scrollIntoView(); }
+    }
+    window.addEventListener('hashchange', openHash); openHash();
+    var btn = document.getElementById('theme'), root = document.documentElement;
+    function label() { btn.textContent = root.dataset.theme === 'dark' ? 'Light' : 'Dark'; }
+    btn.onclick = function () {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('kaist-theme', root.dataset.theme); } catch (e) {}
+      label();
+    };
+    label();
+
+    // Highlight the contents entry for the section on screen.
+    var links = {};
+    document.querySelectorAll('.toc a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting || !links[e.target.id]) return;
+          Object.keys(links).forEach(function (k) { links[k].classList.toggle('on', k === e.target.id); });
+        });
+      }, { rootMargin: '-15% 0px -70% 0px' });
+      document.querySelectorAll('#about, details').forEach(function (s) { io.observe(s); });
+    }
+  })();
+</script>
 </body>
 </html>
