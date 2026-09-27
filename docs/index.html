@@ -64,6 +64,10 @@
 
   h1 { font: 400 clamp(2.6rem, 7vw, 3.8rem)/1.05 "Instrument Serif", Georgia, serif; color: var(--strong); margin: 0 0 0.4rem; letter-spacing: -0.01em; }
   .sub { margin: 0 0 2rem; color: var(--muted); }
+  .head { display: flex; align-items: center; gap: 1.1rem; margin: 0 0 2rem; }
+  .head h1 { margin: 0; }
+  .logo { flex: none; width: 84px; height: 84px; }
+  [data-theme="dark"] .logo { background: #fdf6e3; border-radius: 50%; padding: 3px; }
   .about p { margin: 0 0 1rem; }
 
   .controls { display: flex; gap: 1rem; margin: 2.2rem 0 0.4rem; font-size: 0.9rem; }
@@ -118,6 +122,8 @@
     .layout { padding: 0 1rem; }
     .page { padding: 2rem 0 2.5rem; }
     .scores { grid-template-columns: 1fr; }
+    .logo { width: 58px; height: 58px; }
+    .head { gap: 0.8rem; }
     dl.dates { grid-template-columns: 6.2rem 1fr; }
   }
   @media (prefers-reduced-motion: reduce) { summary::after { transition: none; } }
@@ -149,8 +155,10 @@
   <button class="theme" type="button" id="theme">Dark</button>
 </div>
 
-<h1>My KAIST experience</h1>
-<p class="sub">by Elias</p>
+<div class="head">
+  <img class="logo" src="kaist-logo.svg" alt="KAIST emblem" width="84" height="84">
+  <h1>My KAIST experience</h1>
+</div>
 
 <div class="about" id="about">
   <p>Hi, I'm Elias. I study Artificial Intelligence and Data at DTU (Technical University of Denmark), and in fall 2025, my fifth semester, I went on exchange to KAIST (Korea Advanced Institute of Science and Technology) in Daejeon, South Korea.</p>
