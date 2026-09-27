@@ -75,6 +75,13 @@
 
   details { border-top: 1px solid var(--rule); }
   details:last-of-type { border-bottom: 1px solid var(--rule); }
+  details.inner { border: 1px solid var(--rule); border-radius: 8px; margin: 0.2rem 0 1rem; background: color-mix(in srgb, var(--bg-alt) 45%, transparent); }
+  details.inner > summary { padding: 0.6rem 0.9rem; font-weight: 600; color: var(--strong); }
+  details.inner > summary:hover { color: var(--accent); }
+  .inner-body { padding: 0 0.95rem 0.4rem; }
+  .inner-body ul.cols { columns: 2; column-gap: 2rem; }
+  .inner-body ul.cols li { break-inside: avoid; }
+  @media (max-width: 600px) { .inner-body ul.cols { columns: 1; } }
   summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.95rem 0.2rem; }
   summary::-webkit-details-marker { display: none; }
   summary h2 { font: 400 1.6rem/1.2 "Instrument Serif", Georgia, serif; color: var(--strong); margin: 0; }
@@ -237,6 +244,38 @@
   <div class="body">
     <p>There's no tuition, and I kept my SU (the Danish state study grant), about 6,084 kr a month after tax.</p>
     <p>I applied to about 20 grants and got 4: Erik Sommerfeldt (10,000 kr, taxed), Fabrikant Vilhelm Pedersen (7,000 kr), Otto Mønsted (10,000 kr) and Vera og Carl Johan Michaelsen (10,000 kr). I used AI to help with the letters, but I wrote the drafts myself.</p>
+    <details class="inner">
+      <summary>All the grants I applied for</summary>
+      <div class="inner-body">
+        <p><strong>Got</strong> (37,000 kr in total, about 33,000 after tax)</p>
+        <ul>
+          <li>Erik Sommerfeldt og Hustrus Legat: 10,000 kr, taxed (deadline 18 September 2024)</li>
+          <li>Fabrikant Vilhelm Pedersen og Hustrus Legat: 7,000 kr (deadline 28 February 2025)</li>
+          <li>Otto Mønsteds Fond: 10,000 kr (open 10 January to 1 March 2025)</li>
+          <li>Vera og Carl Johan Michaelsens Legat: 10,000 kr (deadline 21 May 2025)</li>
+        </ul>
+        <p><strong>Didn't get</strong></p>
+        <ul class="cols">
+          <li>Susi og Peter Robinsohns Fond</li>
+          <li>Krista og Viggo Petersens Fond (KV Fonden)</li>
+          <li>Stibo-Fonden</li>
+          <li>Fabrikant Chas. Otzens Fond</li>
+          <li>Dansk Studiefond</li>
+          <li>Knud og Rigmor Wiedemanns Fond</li>
+          <li>Danneskiold-Samsøes Studielegat</li>
+          <li>Ellen &amp; Carl Tafdrups Mindelegat</li>
+          <li>Glashofs Legat</li>
+          <li>Mindefond for Konsul Axel Nielsen</li>
+          <li>Tom Nis Faxøes Fond</li>
+          <li>Linexfonden</li>
+          <li>Frk. Rigmor Enevoldsens Legat</li>
+          <li>Fairlån</li>
+          <li>Frants Allings Legat</li>
+          <li>Dansk Rejseforsikrings Rejselegat</li>
+        </ul>
+        <p>A no from them says nothing about your chances, so apply anyway. Deadlines were for my year and move a little every year.</p>
+      </div>
+    </details>
     <p>My budget for the four months was about 63,000 kr including rent at home, and it was pretty accurate. I spent a bit more on food and a bit less on travel.</p>
     <ul>
       <li>Flights: about 6,000 kr return.</li>
