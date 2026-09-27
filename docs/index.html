@@ -93,11 +93,17 @@
   dl.dates dt { color: var(--muted); font-size: 0.93rem; padding: 0.35rem 0; font-variant-numeric: tabular-nums; }
   dl.dates dd { margin: 0; padding: 0.35rem 0; }
 
+  /* classic tier-list row colours */
   .tiers { list-style: none; padding: 0 !important; }
-  .tiers li { display: grid; grid-template-columns: 1.6rem 1fr; gap: 0.6rem; margin: 0.5rem 0; }
-  .tiers b { color: var(--strong); font-weight: 600; }
-  .tiers .t { font-weight: 600; color: var(--muted); }
-  .tiers .t.s { color: var(--accent); }
+  .tiers li { display: grid; grid-template-columns: 2.1rem 1fr; gap: 0.75rem; align-items: start; margin: 0.7rem 0; }
+  .tier-s { --tier: #ff7f7f; } .tier-a { --tier: #ffbf7f; } .tier-b { --tier: #ffdf7f; }
+  .tier-c { --tier: #ffff7f; } .tier-f { --tier: #7fbfff; }
+  .tiers .t { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; margin-top: 0.1rem; border-radius: 6px;
+    background: var(--tier); color: #1b1b1b; font-weight: 700; font-size: 1.05rem; }
+  .tiers b { font-weight: 600; }
+  .tiers b a { color: #1b1b1b; background: var(--tier); padding: 0.08em 0.35em; border-radius: 4px; text-decoration: none;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .tiers b a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
   footer { margin-top: 3rem; font-size: 0.88rem; color: var(--muted); }
   footer p { margin: 0 0 0.4rem; }
@@ -261,11 +267,11 @@
   <div class="body">
     <p>I took five courses and passed all five. My tier list:</p>
     <ul class="tiers">
-      <li><span class="t s">S</span><span><b><a href="https://coinse.github.io/teaching/2025/cs454/">AI-Based Software Engineering (CS454)</a>.</b> Evolving code with evolutionary algorithms. I came out with a whole new tool in my toolbox.</span></li>
-      <li><span class="t s">A</span><span><b><a href="https://social.cstlab.org/">Introduction to Social Computing (CS473)</a>.</b> We built our own social app. Code mixed with sociology and internet culture.</span></li>
-      <li><span class="t">B</span><span><b><a href="https://diffusion.kaist.ac.kr/">Diffusion and Flow Models (CS492C)</a>.</b> The maths and code behind image generators, with a lot of heavy maths.</span></li>
-      <li><span class="t">C</span><span><b><a href="https://bcs.kaist.ac.kr/sub050101">Methods in Brain and Cognitive Sciences (BCS.30041)</a>.</b> Niche and memory-heavy, but more interesting than I expected. The professor tried his best in English but would sometimes switch to Korean.</span></li>
-      <li><span class="t">F</span><span><b><a href="https://www.kaistdmlab.org/lectures">Introduction to Database (CS360)</a>.</b> Online with the webcam on, and SQL written on paper. Take databases at DTU instead.</span></li>
+      <li class="tier-s"><span class="t">S</span><span><b><a href="https://coinse.github.io/teaching/2025/cs454/">AI-Based Software Engineering (CS454)</a>.</b> Evolving code with evolutionary algorithms. I came out with a whole new tool in my toolbox.</span></li>
+      <li class="tier-a"><span class="t">A</span><span><b><a href="https://social.cstlab.org/">Introduction to Social Computing (CS473)</a>.</b> We built our own social app. Code mixed with sociology and internet culture.</span></li>
+      <li class="tier-b"><span class="t">B</span><span><b><a href="https://diffusion.kaist.ac.kr/">Diffusion and Flow Models (CS492C)</a>.</b> The maths and code behind image generators, with a lot of heavy maths.</span></li>
+      <li class="tier-c"><span class="t">C</span><span><b><a href="https://bcs.kaist.ac.kr/sub050101">Methods in Brain and Cognitive Sciences (BCS.30041)</a>.</b> Niche and memory-heavy, but more interesting than I expected. The professor tried his best in English but would sometimes switch to Korean.</span></li>
+      <li class="tier-f"><span class="t">F</span><span><b><a href="https://www.kaistdmlab.org/lectures">Introduction to Database (CS360)</a>.</b> Online with the webcam on, and SQL written on paper. Take databases at DTU instead.</span></li>
     </ul>
     <p>I only got courses that weren't full, because I forgot the lottery. Lectures are 75 minutes and you're expected to study a lot on your own. The exams test memory, but grading is on a curve and everything comes back to DTU as "passed".</p>
     <p>Once I was too direct with a TA (teaching assistant), and the professor told me to be more respectful. After that I had ChatGPT help me phrase my emails politely, and the professors turned out to be really flexible when asked nicely.</p>
